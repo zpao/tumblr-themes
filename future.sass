@@ -1,0 +1,144 @@
+!serif = "Georgia, Times, 'Times New Roman', serif"
+!sans = "Helvetica, Tahoma, Arial, sans-serif"
+!sans2 = "Verdana, " + !sans
+!sans3 = "Futura, Calibri, 'Lucida Sans Unicode', " + !sans
+
+/* HTML5 elements should be block level. Right Firefox?
+
+article, aside, figure, footer, header, hgroup, nav, section
+  display: block
+
+/* General stuff
+
+body
+  font-family= !serif
+
+a
+  text-decoration: none
+
+p, ul, ol
+  margin-bottom: 1.22em
+
+ul, ol
+  padding-left: 20px
+  li
+    margin-bottom: .5em
+ul
+  li
+    list-style: disc outside
+ol
+  li
+    list-style: decimal outside
+
+strong, b
+  font-weight: bold
+
+em, i
+  font-style: italic
+
+blockquote
+  border-left: 5px solid #CCC
+  padding: 0 20px
+
+/* Layout
+
+#container
+  width: 600px
+  margin: 50px auto 10px auto
+
+/* Header (general, article will be more specific)
+
+header#tumbl-header
+  margin-bottom: 50px
+  text-align: center
+
+  h1, h2
+    display: inline
+  h1
+    font-family= !sans3
+    font-size: 40px
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: -3px
+    margin-right: 1em
+    
+    a
+      color: #333
+      
+  h2
+    font-size: 20px
+    color: #999
+
+/* Article
+
+article
+  margin-bottom: 40px
+
+  header
+    h1
+      font-size: 20px
+      display: inline
+
+  .post-meta
+    font-family= !sans3
+    text-transform: uppercase
+    font-size: 10px
+
+    .heart
+      color: #c11
+
+    .post-meta-section
+      margin-left: 1.5em
+      color: #999
+      
+      a
+        color: #666
+        margin-right: .5em
+        &:hover
+          color: #333
+
+  .post-content
+    font-family= !sans2
+    font-size: 12px
+    margin-top: 1em
+    
+    h2
+      font-size: 14px
+      font-family= !sans3
+      text-transform: uppercase
+    
+    .post-photovideo
+      text-align: center
+
+/* Pagination
+
+#pagination
+  font-family= !serif
+  text-align: center
+  color: #666
+
+  span
+    margin: auto 10px
+    color: #999
+  
+  a
+    color: #666
+    &:hover
+      color: #333
+
+/* Footer
+
+footer
+  font-family= !sans3
+  text-transform: uppercase
+  text-align: center
+  font-size: 10px
+  margin: 20px 0
+  color: #999
+  
+  a
+    color: #666
+    margin-left: .5em
+    
+    &:hover
+      color: #333

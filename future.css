@@ -1,0 +1,116 @@
+/* HTML5 elements should be block level. Right Firefox? */
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+/* General stuff */
+body {
+  font-family: Georgia, Times, 'Times New Roman', serif; }
+
+a {
+  text-decoration: none; }
+
+p, ul, ol {
+  margin-bottom: 1.22em; }
+
+ul, ol {
+  padding-left: 20px; }
+  ul li, ol li {
+    margin-bottom: 0.5em; }
+
+ul li {
+  list-style: disc outside; }
+
+ol li {
+  list-style: decimal outside; }
+
+strong, b {
+  font-weight: bold; }
+
+em, i {
+  font-style: italic; }
+
+blockquote {
+  border-left: 5px solid #cccccc;
+  padding: 0 20px; }
+
+/* Layout */
+#container {
+  width: 600px;
+  margin: 50px auto 10px auto; }
+
+/* Header (general, article will be more specific) */
+header#tumbl-header {
+  margin-bottom: 50px;
+  text-align: center; }
+  header#tumbl-header h1, header#tumbl-header h2 {
+    display: inline; }
+  header#tumbl-header h1 {
+    font-family: Futura, Calibri, 'Lucida Sans Unicode', Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -3px;
+    margin-right: 1em; }
+    header#tumbl-header h1 a {
+      color: #333333; }
+  header#tumbl-header h2 {
+    font-size: 20px;
+    color: #999999; }
+
+/* Article */
+article {
+  margin-bottom: 40px; }
+  article header h1 {
+    font-size: 20px;
+    display: inline; }
+  article .post-meta {
+    font-family: Futura, Calibri, 'Lucida Sans Unicode', Helvetica, Tahoma, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px; }
+    article .post-meta .heart {
+      color: #cc1111; }
+    article .post-meta .post-meta-section {
+      margin-left: 1.5em;
+      color: #999999; }
+      article .post-meta .post-meta-section a {
+        color: #666666;
+        margin-right: 0.5em; }
+        article .post-meta .post-meta-section a:hover {
+          color: #333333; }
+  article .post-content {
+    font-family: 'Yanone Kaffeesatz', Arimo, Verdana, Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    margin-top: 1em; }
+    article .post-content h2 {
+      font-size: 14px;
+      font-family: Futura, Calibri, 'Lucida Sans Unicode', Helvetica, Tahoma, Arial, sans-serif;
+      text-transform: uppercase; }
+    article .post-content .post-photovideo {
+      text-align: center; }
+
+/* Pagination */
+#pagination {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  color: #666666; }
+  #pagination span {
+    margin: auto 10px;
+    color: #999999; }
+  #pagination a {
+    color: #666666; }
+    #pagination a:hover {
+      color: #333333; }
+
+/* Footer */
+footer {
+  font-family: Futura, Calibri, 'Lucida Sans Unicode', Helvetica, Tahoma, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  margin: 20px 0;
+  color: #999999; }
+  footer a {
+    color: #666666;
+    margin-left: 0.5em; }
+    footer a:hover {
+      color: #333333; }
